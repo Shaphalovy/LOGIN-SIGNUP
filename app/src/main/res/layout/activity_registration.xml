@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background">
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="SIGNUP HERE"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/signUpEmailEditText"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="E-mail"
+        android:drawableLeft="@drawable/emailx24"
+        android:drawablePadding="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/customborder"/>
+    <EditText
+        android:id="@+id/signUpUserNameEditText"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="User name"
+        android:drawableLeft="@drawable/user_white"
+        android:drawablePadding="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/customborder"/>
+
+    <RadioGroup
+        android:id="@+id/signUpGenderRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        >
+        <RadioButton
+            android:id="@+id/maleRadioButtonId"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="@color/white"/>
+        <RadioButton
+            android:id="@+id/femaleRadioButtonId"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="@color/white"/>
+        <RadioButton
+            android:id="@+id/otherRadioButtonId"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textColor="@color/white"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/signUpPassword1EditText"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:drawableLeft="@drawable/padlock_white"
+        android:drawablePadding="10dp"
+        android:textColor="@color/white"
+
+        android:background="@drawable/customborder"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButtonId"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="SignUP"
+        android:textColor="@color/white"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/signup"
+        android:padding="15dp"
+        />
+
+
+
+
+
+
+</LinearLayout>
